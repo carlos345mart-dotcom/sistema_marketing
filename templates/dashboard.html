@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+
+<h1>Dashboard Inteligente</h1>
+
+<table border="1">
+    <tr>
+        <th>Nombre</th>
+        <th>Alcance</th>
+        <th>Interacciones</th>
+        <th>Conversiones</th>
+        <th>Costo</th>
+        <th>% Conversión</th>
+        <th>% Engagement</th>
+        <th>Recomendación</th>
+    </tr>
+
+    {% for d in datos %}
+    <tr>
+        <td>{{ d[0] }}</td>
+        <td>{{ d[1] }}</td>
+        <td>{{ d[2] }}</td>
+        <td>{{ d[3] }}</td>
+        <td>{{ d[4] }}</td>
+        <td>{{ d[5] }}%</td>
+        <td>{{ d[6] }}%</td>
+        <td>{{ d[7] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
